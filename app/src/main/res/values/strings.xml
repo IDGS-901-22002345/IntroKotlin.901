@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">IntroKotlin.901</string>
+    <string name="ingresa_primer_numero">Ingresa el primer numero</string>
+    <string name="ingresa_segundo_numero">Ingresa el segundo numero</string>
+    <string name="calcular">Calcular</string>
+    <string name="resultado_default">Resultado = 0.0</string>
+    <string name="suma">Suma</string>
+    <string name="resta">Resta</string>
+    <string name="dividir">Dividir</string>
+    <string name="multiplicar">Multiplicar</string>
+    <string name="resultado_suma">Suma = %1$.2f</string>
+    <string name="resultado_resta">Resta = %1$.2f</string>
+    <string name="resultado_multiplicacion">Multiplicación = %1$.2f</string>
+    <string name="resultado_division">División = %1$.2f</string>
+    <string name="error_division_cero">No se puede dividir por cero</string>
 </resources>
