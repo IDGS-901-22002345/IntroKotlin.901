@@ -33,6 +33,14 @@
         android:text="Saludar"
         app:layout_constraintTop_toTopOf="parent"
         />
+    <Button
+        android:id="@+id/btn4"
+        android:layout_width="365dp"
+        android:layout_height="wrap_content"
+        android:text="Diccionario"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
 
 
 </LinearLayout>

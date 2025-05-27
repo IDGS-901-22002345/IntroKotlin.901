@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".diccionario.agregarPalabra">
+
+    <TextView
+        android:id="@+id/textViewCaptureTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Capturar Palabra"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textViewSpanish"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="48dp"/>
+
+    <TextView
+        android:id="@+id/textViewSpanish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Español"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCaptureTitle"
+        app:layout_constraintBottom_toTopOf="@+id/textViewEnglish"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="32dp"/>
+
+    <EditText
+        android:id="@+id/editTextSpanish"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese palabra en español"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewSpanish"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="32dp"/>
+
+    <TextView
+        android:id="@+id/textViewEnglish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingles"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSpanish"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSave"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="24dp"/>
+
+    <EditText
+        android:id="@+id/editTextEnglish"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter English word"
+        android:inputType="text"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewEnglish"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="32dp"/>
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEnglish"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutMessage"
+        android:layout_marginTop="48dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSave"
+        app:layout_constraintBottom_toTopOf="@+id/buttonReturnToMenu"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="32dp">
+
+        <TextView
+            android:id="@+id/textViewSaveMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Palabra guardada con éxito"
+            android:textColor="@android:color/black"
+            android:visibility="invisible"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonReturnToMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Regresar al Menú"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutMessage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="32dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

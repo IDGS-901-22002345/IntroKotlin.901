@@ -12,12 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IntroKotlin901"
         tools:targetApi="31">
-
+        <activity
+            android:name=".archivo.archivo"
+            android:exported="false" />
         <activity
             android:name=".MenuActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.DayNight">
-            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -37,15 +38,27 @@
         <activity
             android:name=".cinepolis.cinepolis"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.DayNight"/>
+            android:theme="@style/Theme.AppCompat.DayNight" />
         <activity
             android:name=".ejemplo2.resultado"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.DayNight"/>
+            android:theme="@style/Theme.AppCompat.DayNight" />
         <activity
             android:name=".ejemplo2.saludoActivity"
             android:exported="false"
-            android:theme="@style/Theme.AppCompat.DayNight"/>
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".diccionario.agregarPalabra"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".diccionario.diccionario"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight" />
+        <activity
+            android:name=".diccionario.menuDiccionario"
+            android:exported="false"
+            android:theme="@style/Theme.IntroKotlin901" />
     </application>
 
 </manifest>
